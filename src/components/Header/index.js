@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import About from "../About/index.js";
 import coverImage from "../../assets/images/cover.JPG";
 import Nav from "../Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
