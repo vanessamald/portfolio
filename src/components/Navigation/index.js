@@ -1,24 +1,29 @@
 import React from 'react';
+import About from '../About';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../../src/index.css';
+
 
 function Nav(props) {
     return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
-            <a className="navbar-brand" href="#">Vanessa Maldonado</a>
-  
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+        <div className="d-flex flex-row flex-wrap justify-content-center justify-content-around">
+            
+            
+            <div className="p-2" >
+            <a className="nav-link" href="#contact" class="navigation" >Contact</a>
+            </div>           
+                  
+            <div className="p-2">
+            <a className="nav-link" href="#resume" class="navigation" >Resume</a>
+            </div>  
+
+            <div className="p-2">
+            <a className="nav-link" href="#portfolio" class="navigation" >Portfolio</a>
+            </div>        
+ 
+            
+
             </div>
-        </nav>
     )
 }
 
