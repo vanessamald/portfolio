@@ -11,10 +11,13 @@ function Contact() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+
+      <div className="nav-left-item"> 
+      <Button className="nav-left-link"  onClick={handleShow}>
         Contact
       </Button>
-
+    </div>
+    
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Let's Chat!</Modal.Title>

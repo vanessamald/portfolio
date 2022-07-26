@@ -8,22 +8,19 @@ import Portfolio from '../Portfolio';
 function Nav(props) {
     const [show, setShow] = useState(false)
     return(
-        <div className="d-flex flex-row flex-wrap justify-content-center justify-content-around">
+        <div className="nav-right" >
             
-            <div className="p-2" >
-            <a className="nav-link" class="navigation" >About</a>
-            
-            </div>  
-            <div className="p-2" >
-            <a className="nav-link" href="#contact" class="navigation" >Contact</a>
+              
+            <div>
+            <a className="nav-link-right"  >About</a>
             </div>           
                   
-            <div className="p-2">
-            <a className="nav-link" href="#resume" class="navigation" >Resume</a>
+            <div>
+            <a className="nav-link-right"  >Resume</a>
             </div>  
 
-            <div className="p-2">
-            <a className='nav-link' class='navigation' onClick={() => setShow(true)} > Portfolio</a>
+            <div>
+            <a className='nav-link-right' onClick={() => setShow(true)} > Portfolio</a>
             <Portfolio fade="false"  onClick={() => setShow(false)} show={show}/>
             </div>
         </div>          

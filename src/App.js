@@ -7,18 +7,14 @@ import Contact from './components/Contact/index.js';
 
 
 function App() {
-  //const [show, setShow] = useState(false)
+ 
   return (
     <div>
      <main>
+     <Header></Header>
+     
       <Nav/>
 
-      <Header></Header>
-
-
-      <Contact></Contact>
-
-      <About />
      </main>
     </div>
   );

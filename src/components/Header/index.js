@@ -1,23 +1,31 @@
 import React, { Component } from "react";
 import coverImage from "../../assets/images/cover.JPG";
 import Nav from "../Navigation";
+import Contact from "../Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../.././index.css';
 
 function Header() {
         return ( 
-        <div className="d-flex flex-row flex-wrap justify-content-center justify-content-around"> 
+         
+        <div className="container"> 
+           <div className="nav-left">
+
+            <div className="nav-left-item">
+                <a className="nav-left-link" href="#">Vanessa Maldonado</a>
+            </div>
             
-            <header >
-            
-                
-            
-            </header>
-            
-            
-            <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" ></img>
-            
+            <div className="nav-left-line" ></div>
+
+            <div className="nav-left-item">
+                <a className="nav-left-link" href="https://github.com/vanessamald">Git</a>
+            </div> 
+
+            <div className="nav-line" ></div>
+
+            <Contact  ></Contact>
         </div>
+    </div>   
     );
 }
 
