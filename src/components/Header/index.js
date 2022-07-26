@@ -10,7 +10,7 @@ function Header() {
             
             <header >
             
-                <Nav/>
+                
             
             </header>
             

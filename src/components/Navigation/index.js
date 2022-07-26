@@ -24,7 +24,7 @@ function Nav(props) {
 
             <div className="p-2">
             <a className='nav-link' class='navigation' onClick={() => setShow(true)} > Portfolio</a>
-            <Portfolio fade={false} onClose={() => setShow(false)} show={show}/>
+            <Portfolio fade="false"  onClick={() => setShow(false)} show={show}/>
             </div>
         </div>          
     )

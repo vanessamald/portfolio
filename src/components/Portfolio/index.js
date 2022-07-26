@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Modal from 'react-bootstrap/Modal';
 import Row from 'react-bootstrap/Row';
+//import {render} from 'react-dom';
 
 // images
 import RunBuddy from "../.././assets/images/run-buddy.png";
@@ -14,10 +15,13 @@ import timedQuiz3 from "../.././assets/images/timed-quiz3.jpg";
 import weatherDashboard from "../.././assets/images/weather-dashboard.jpg";
 
 function MydModalWithGrid(props) {
-    const [fullscreen, setFullscreen] = useState(true);
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false)
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
-    <Modal fullscreen={fullscreen} {...props} aria-labelledby="contained-modal-title-vcenter" >
-      <Modal.Header closeButton>
+    <Modal fullscreen={fullscreen} {...props} aria-labelledby="contained-modal-title-vcenter"  >
+      <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
           My Work
         </Modal.Title>
@@ -51,15 +55,19 @@ function MydModalWithGrid(props) {
             <img src={RunBuddy} alt="Run Buddy Website" width='100%' ></img>
             </Col>
           </Row>
+          
         </Container>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+      <Button variant="primary" onClick={() => setShow(false)}>
+        Close
+      </Button>
       </Modal.Footer>
     </Modal>
   );
 }
 
+/*
 function App() {
   const [modalShow, setModalShow] = useState(false);
 
@@ -73,6 +81,9 @@ function App() {
     </>
   );
 }
+*/
 
 //render(<App />);
+
 export default MydModalWithGrid;
+

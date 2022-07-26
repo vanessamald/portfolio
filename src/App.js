@@ -11,7 +11,10 @@ function App() {
   return (
     <div>
      <main>
+      <Nav/>
+
       <Header></Header>
+
 
       <Contact></Contact>
 

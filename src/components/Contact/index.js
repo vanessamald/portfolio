@@ -1,76 +1,62 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 
+function Contact() {
+  const [show, setShow] = useState(false);
 
-function ContactForm() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    
-    const [ errorMessage, setErrorMessage ] = useState("");
-    const { name, email, message } = formState;
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-          console.log('Submit Form', formState);
-        }
-      };
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Contact
+      </Button>
 
-    function handleChange(e) {
-        if (e.target.name === "email") {
-            const isValid = validateEmail(e.target.value);
-            console.log(isValid);
-             //isValid conditional statement
-            if (!isValid) {
-                setErrorMessage("Please enter a valid email address");
-            } else {
-                setErrorMessage("");
-            }
-            } else {
-                if (!e.target.value.length) {
-                  setErrorMessage(`${e.target.name} is required.`);
-                } else {
-                  setErrorMessage('');
-                }
-            }
-                if (!errorMessage) {
-                    setFormState({ ...formState, [e.target.name]: e.target.value });
-                    console.log('Handle Form', formState);
-                }
-            }
-        
-    return(
-    <section >
-    <h1 className='justify-content-center' >Contact me</h1>
-    <div className="d-flex flex-row flex-wrap justify-content-center" >
-    
-    <form id="contact-form" onSubmit={handleSubmit}>
-      <div className="p-2">
-        <p>Name</p>
-        <label htmlFor="name" ></label>
-        <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
-      </div>
-      <div className="p-2">
-        <p>Email</p>
-        <label htmlFor="email"></label>
-        <input type="email" name="email" defaultValue={email} onBlur={handleChange}  />
-      </div>
-      <div className='p-2'>
-        <p>Message</p>
-        <label htmlFor="message"></label>
-        <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
-      </div>
-      {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-      <div className='p-2'>
-      <button type="submit" >Submit</button>
-      </div>
-    </form>
-    </div>
-    </section>
-    )
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Let's Chat!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="name"
+                placeholder="name"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="youremail@example.com"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Message</Form.Label>
+              <Form.Control as="textarea" rows={3} placeholder="hi"/>
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
 }
 
-export default ContactForm;
+export default Contact;
