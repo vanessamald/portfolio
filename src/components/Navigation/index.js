@@ -8,7 +8,9 @@ function Nav(props) {
     return(
         <div className="d-flex flex-row flex-wrap justify-content-center justify-content-around">
             
-            
+            <div className="p-2" >
+            <a className="nav-link" href="#about" class="navigation" >About</a>
+            </div>  
             <div className="p-2" >
             <a className="nav-link" href="#contact" class="navigation" >Contact</a>
             </div>           

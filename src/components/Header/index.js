@@ -12,10 +12,7 @@ function Header() {
             <header >
             
                 <Nav/>
-            <div className="p-2" >
             
-            <a className="navbar-brand" href="#about" class="title"  >Vanessa Maldonado</a>
-            </div>
             </header>
             
             
