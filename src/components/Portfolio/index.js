@@ -15,11 +15,9 @@ import timedQuiz3 from "../.././assets/images/timed-quiz3.jpg";
 import weatherDashboard from "../.././assets/images/weather-dashboard.jpg";
 
 function MydModalWithGrid(props) {
-  
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false)
   
-
   function handleShow(breakpoint) {
     setFullscreen(breakpoint);
     setShow(true);
@@ -73,24 +71,6 @@ function MydModalWithGrid(props) {
     </Modal>
   );
 }
-
-/*
-function App() {
-  const [modalShow, setModalShow] = useState(false);
-
-  return (
-    <>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch modal with grid
-      </Button>
-
-      <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
-    </>
-  );
-}
-*/
-
-//render(<App />);
 
 export default MydModalWithGrid;
 
