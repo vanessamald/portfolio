@@ -278,8 +278,7 @@ code {
     -webkit-box-direction: normal;
     flex-direction: column;
     margin-left: 10px;
-    font-size: 50px;
-    
+    font-size: 50px; 
   }
 }
   
@@ -292,11 +291,37 @@ code {
   background-color: #000;
 }
 
-.mobile-portfolio {
+.portfolio {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 5px;
-  }
+  background-color: #000;
+  color: #FFEEE2;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.portfolio-link {
+  color: #FFEEE2;
+  font-size: 50px;
+  text-decoration: none;
+  background-color: black;
+}
+
+.portfolio-link:hover {
+  color: #FFEEE2;
+  text-decoration: none;
+  position: fixed;
+  display: block;
+
+ 
+  -webkit-animation: slide 300ms ease-in;
+  -webkit-animation-delay: 2s;
+  animation: slide 300ms ease-in;
+  
+  animation-delay: 4s;
+}
 
 .about-content {
   line-height: 1.9em;
@@ -310,7 +335,7 @@ code {
 .about-text {
   font-size: 12px;
   font-family: Merriweather, sans-serif;
-  text-transform: lowercase;
+  text-transform: initial;
   letter-spacing: 3px;
   font-weight: 500;
 }
@@ -327,8 +352,14 @@ code {
   margin-right: 30px;
   margin-top: 0px;
   margin-bottom: 50px;
-  float: right;
-  
+  float: right; 
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.profile-pic:hover {
+  width: 400px;
+  height: auto;
+  transform: scale(1.0);
 }
 
 @media screen and (max-width: 767px) {
@@ -337,6 +368,3 @@ code {
     margin-right: 30px;
   }
 }
-  
-
-  

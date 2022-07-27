@@ -12,7 +12,7 @@ function Header() {
            <div className="nav-left">
 
             <div className="nav-left-item">
-                <a className="nav-left-link" href="#">Vanessa Maldonado</a>
+                <a className="nav-left-link" href="/">Vanessa Maldonado</a>
             </div>
             
             <div className="nav-left-line" ></div>
