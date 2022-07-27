@@ -23,7 +23,7 @@ function Header() {
 
             <div className="nav-line" ></div>
 
-            <Contact  ></Contact>
+            <Contact ></Contact>
         </div>
     </div>   
     );

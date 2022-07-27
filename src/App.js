@@ -6,15 +6,19 @@ import Contact from './components/Contact/index.js';
 
 
 
+
 function App() {
- 
+  
   return (
     <div>
      <main>
      <Header></Header>
+
      
       <Nav/>
 
+
+      
      </main>
     </div>
   );

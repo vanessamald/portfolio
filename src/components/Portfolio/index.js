@@ -15,42 +15,49 @@ import timedQuiz3 from "../.././assets/images/timed-quiz3.jpg";
 import weatherDashboard from "../.././assets/images/weather-dashboard.jpg";
 
 function MydModalWithGrid(props) {
+  
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false)
-  const [modalShow, setModalShow] = React.useState(false);
+  
+
+  function handleShow(breakpoint) {
+    setFullscreen(breakpoint);
+    setShow(true);
+  }
 
   return (
-    <Modal fullscreen={fullscreen} {...props} aria-labelledby="contained-modal-title-vcenter"  >
+   
+    <Modal className="mobile-portfolio" fullscreen={fullscreen} {...props} aria-labelledby="contained-modal-title-vcenter"  >
       <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
           My Work
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className="show-grid">
-        <Container>
-          <Row>
-            <Col xs={12} md={8}>
+        <Container >
+          <Row className="justify-content-md-center">
+            <Col xs ls="2">
             <h2>Friends Timed Quiz</h2>
             <img src={timedQuiz} alt="timed quiz landing page image" width="100%" ></img>
             
             </Col>
-            <Col xs={6} md={4}>
+            <Col xs ls="2">
             <h2>Portfolio</h2>
             <img src={portfolioImage} alt="Portfolio website" width="100%" ></img>
             </Col>
           </Row>
 
-          <Row>
-            <Col xs={6} md={4}>
+          <Row className="justify-content-md-center">
+            <Col xs ls="2">
             <p>HTML, CSS, JAVASCRIPT</p>
             <img src={timedQuiz2} alt="timed quiz page" width="100%" ></img>
             <img src={timedQuiz3} alt="timed quiz page" width="100%" ></img>
             </Col>
-            <Col xs={6} md={4}>
+            <Col xs ls="2">
             <h2>Weather Dashboard</h2>
-            <img src={weatherDashboard} alt="weather dashboard website" width="150%" ></img>
+            <img src={weatherDashboard} alt="weather dashboard website" width="100%" ></img>
             </Col>
-            <Col xs={6} md={4}>
+            <Col xs ls="2">
             <h2>Run Buddy</h2>
             <img src={RunBuddy} alt="Run Buddy Website" width='100%' ></img>
             </Col>
@@ -59,9 +66,9 @@ function MydModalWithGrid(props) {
         </Container>
       </Modal.Body>
       <Modal.Footer>
-      <Button variant="primary" onClick={() => setShow(false)}>
+      <button className="left-btn" variant="primary" onClick={() => setShow(false)}>
         Close
-      </Button>
+      </button>
       </Modal.Footer>
     </Modal>
   );

@@ -19,6 +19,9 @@ code {
   font-family: Montserrat, sans-serif;
   background-color: #F7FFE0;
   color: #9f7e69;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
 }
 
 .box {
@@ -45,7 +48,6 @@ code {
 }
 
 .modal {
-  
   position: fixed;
   left: 0;
   top: 0;
@@ -134,7 +136,14 @@ code {
   text-decoration: none;
   text-transform: uppercase; 
   margin-left: 10px;
-  
+}
+
+.left-btn, .contact-btn {
+  background-color: #000;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
 }
 
 .nav-left-link:hover {
@@ -172,6 +181,23 @@ code {
     height: 1px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nav-left{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    
+    -webkit-box-flex: 0;
+    flex: 0 auto;
+    transform: rotate(0deg);
+  }
+  .nav-left-link{
+    font-size: 10px;
+    padding: 10px;
   }
 }
 
@@ -213,6 +239,9 @@ code {
   color: #9f7e69;
   text-decoration: none;
   list-style: none;   
+
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
 }
 
 .nav-link-right:hover {
@@ -221,6 +250,53 @@ code {
 }
 
 .nav-link-right:active {
-  -ms-transform: rotate(20deg); /* IE 9 */
-  transform: rotate(20deg); 
+  -ms-transform: rotate(45deg); /* IE 9 */
+  transform: rotate(45deg); 
 }
+
+@media screen and (max-width: 767px) {
+  .nav-right {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nav-right, .nav-link-right{
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 50px;
+    
+  }
+}
+  
+.contact-form {
+  text-transform: uppercase;
+  color: #6c584c;
+}
+
+.contact-form:active {
+  background-color: #000;
+}
+
+  .mobile-portfolio {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+
+ 
+  

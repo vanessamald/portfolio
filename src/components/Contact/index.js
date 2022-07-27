@@ -13,14 +13,14 @@ function Contact() {
     <>
 
       <div className="nav-left-item"> 
-      <Button className="nav-left-link"  onClick={handleShow}>
+      <a className="nav-left-link left-btn"  onClick={handleShow}>
         Contact
-      </Button>
+      </a>
     </div>
     
-      <Modal show={show} onHide={handleClose}>
+      <Modal className="contact-form" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Let's Chat!</Modal.Title>
+          <Modal.Title>Let's Connect!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -50,12 +50,12 @@ function Contact() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <button className='contact-btn' variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
+          </button>
+          <button className='contact-btn' variant="primary" onClick={handleClose}>
             Save Changes
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
     </>
