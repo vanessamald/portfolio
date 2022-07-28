@@ -39,7 +39,7 @@ function MydModalWithGrid(props) {
             </div> 
             <br/>         
             <div className="portfolio">
-              <a className="portfolio-link" id="portfolio">Portfolio</a>              
+              <Link to="/portfolio/hodl" className="portfolio-link" id="portfolio">HODL</Link>              
             </div>
             <br/>
             <div className="portfolio">

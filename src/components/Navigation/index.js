@@ -16,7 +16,8 @@ function Nav(props)  {
                 <Route path="/" element={<Home></Home>} />
                 <Route path="/about" element={<About></About>} />
                 <Route path="/portfolio" element={<Portfolio></Portfolio>} /> 
-                <Route path="/portfolio/friends" element={<Gallery/>} />    
+                <Route path="/portfolio/friends" element={<Gallery/>} /> 
+                <Route path="/portfolio/hodl" element={<Gallery/>} />   
         </Routes> 
         </BrowserRouter>        
     )
