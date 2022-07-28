@@ -5,13 +5,18 @@ import Portfolio from '../Portfolio';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../src/index.css';
 
+import Gallery from '../Gallery';
+import Photos from '../Gallery';
+import Content from '../Gallery';
+
 function Nav(props)  {
     return(
         <BrowserRouter>
         <Routes>
                 <Route path="/" element={<Home></Home>} />
                 <Route path="/about" element={<About></About>} />
-                <Route path="/portfolio" element={<Portfolio></Portfolio>} />     
+                <Route path="/portfolio" element={<Portfolio></Portfolio>} /> 
+                <Route path="/portfolio/friends" element={<Gallery/>} />    
         </Routes> 
         </BrowserRouter>        
     )
@@ -24,8 +29,7 @@ function Home() {
             <nav className="nav-right">
                 <Link to="/resume" className="nav-link-right" >Resume</Link>
                 <Link to="/about" className="nav-link-right" >About</Link>
-                <a className='nav-link-right' onClick={() => setShow(true)} > Portfolio</a>
-                <Portfolio fade="false"  onClick={() => setShow(false)} show={show}/>
+                <Link to="/portfolio" className="nav-link-right" >Portfolio</Link>
             </nav>
         </div>
     )
