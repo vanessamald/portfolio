@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Router, Route, Link, Routes } from "react-router-dom";
-import Modal from 'react-bootstrap/Modal';
+import { Carousel } from 'react-bootstrap';
 
 // images
 import hodl from "../../assets/images/hodl-cover.png";
@@ -10,7 +9,9 @@ import hodlDesktop2 from "../../assets/images/hodl-desktop2.png";
 import friendsQuiz from "../../assets/images/friends-cover.png";
 import friendsChoice from "../../assets/images/friends-choices.png";
 import weatherDesktop from "../../assets/images/weather-desktop.png";
+import weatherDesktop2 from "../../assets/images/weather-desktop2.png";
 import weatherMobile from "../../assets/images/weather-mobile.png";
+import weatherMobile2 from "../../assets/images/weather-mobile2.png";
 import friendsDesktop from "../../assets/images/friends-desktop.png";
 import friendsDesktop2 from "../../assets/images/friends-desktop2.png";
 
@@ -18,11 +19,12 @@ function Gallery (props){
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState();
 
-  const [photos] = useState([
+  const [photos] = useState ([
     {
       name: 'Friends Timed Quiz',
       category: 'friends',
-      description: 'consectetur adipiscing elit. Nunc ultricie',
+      id: 1,
+      description: 'A timed Friends trivia quiz game that lets the user save their high scores and see the top scores.',
       image: friendsQuiz,
       image2: friendsChoice,
       image3: friendsDesktop,
@@ -31,16 +33,20 @@ function Gallery (props){
     },
     {
       name: 'Weather Dashboard',
+      id: 2,
       category: 'weather-dashboard',
-      description: 'Lorem ipsum dolor sit amet',
+      description: 'A weather dashboard application that allows users to search for weather conditions by city name',
       image: weatherMobile,
-      image2: weatherDesktop,
+      image2: weatherMobile2,
+      image3: weatherDesktop,
+      image4: weatherDesktop2,
       url: 'https://vanessamald.github.io/weather-dashboard/'
     },
     {
-      name: 'HODL App',
+      name: 'Hold on for Dear Life Ape',
+      id: 3,
       category: 'hodl-app',
-      description: 'Lorem ipsum dolor sit amet',
+      description: 'A crypto currency app that lets users compare the value of crypto to the value of popular stocks',
       image: hodl,
       image2: hodlCrypto,
       image3: hodlDesktop1,
@@ -48,36 +54,53 @@ function Gallery (props){
       url: 'https://drkevinfriday.github.io/Hold-On-for-Dear-Life-Ape/'
     }
   ]);
-  
-  const photosList = photos.map((photo) =>  
-  <div className="gallery-content">
-  <h2 key={photo.name} >{photo.name}</h2>
-  <p key={photo.description} className="gallery-text"> {photo.description}</p>
-  
-  <img className="gallery-image" src={photo.image} alt={photo.name} width="100%"></img>
-  <img className="gallery-image" src={photo.image2} alt={photo.name} width="100%"></img>
-  <img className="gallery-image" src={photo.image3} alt={photo.name} width="100%"></img>
-  <img className="gallery-image" src={photo.image4} alt={photo.name} width="100%"></img>
-  <a href={photo.url} className="gallery-link" >URL </a>
-  
-  </div>
 
-  
-  )
-  
-  console.log(photosList);
-  
-  return ( 
-     
-   <div className="gallery">
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    
+    <Carousel variant="dark" activeIndex={index} onSelect={handleSelect}>
+      {photos.map(({ name, category, id, description, image, image2, image3, image4, url }) => (
+       
+        <Carousel.Item key={id} >
+          <img
+            className="d-block w-100"
+            src={image}
+            alt={name}
+            />
+            <h3 className="gallery-title" >{name}</h3>
+            
+             <img
+            className="d-block w-100"
+            src={image2}
+            alt={name}
+            />
+            
+            <img
+            className="d-block w-100"
+            src={image3}
+            alt={name}
+            />
+             <img
+            className="d-block w-100"
+            src={image4}
+            alt={name}
+            />
+            <Carousel.Caption>
+            <p className="gallery-text">{description}</p>
+            <a href={url} className="gallery-link" target="_blank" >Check it out!</a>
+            
+            </Carousel.Caption>
+        </Carousel.Item>
         
-        {photosList}
-   </div>
-  )
-  }
+      ))}
+    </Carousel>
+   
+  )}; 
+ 
 
-
-export default Gallery;
-
-       
-       
+export default Gallery ;
