@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import $ from 'jquery';
 import Header from './components/Header/index.js';
 import Nav from './components/Navigation/index.js';
+import Footer from './components/Footer/index.js';
+import About from './components/About/index.js';
 //import Gallery from './components/Gallery/index.js';
 //import About from './components/About/index.js';
 //import Contact from './components/Contact/index.js';
@@ -14,9 +16,31 @@ function App() {
   return (
     <div>
      <main>
-     <Header></Header>
+      <section>
+      
+      <div>
+      <Header></Header>
       <Nav/>
+      
+      </div>
+
+      
+
+
+      <div>
       <a  className="main-title permahover">Vanessa Maldonado</a>
+      </div>
+
+      <div>
+      
+      </div>
+
+    
+      
+      
+      
+     
+      </section>
      </main>
     </div>
   );

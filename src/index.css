@@ -8,6 +8,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+
+  
 }
 
 code {
@@ -16,6 +19,7 @@ code {
 }
 
 * {
+  background-color: #e5ddc4;
   font-family: Montserrat, sans-serif;
   
   color: #9f7e69;
@@ -25,29 +29,35 @@ code {
 }
 
 .main-title {
-  margin-right: 3vw;
-  font-family: 'Grandslang roman', sans-serif;
+  font-family: Merriweather, sans-serif;
+  float:right;
+  letter-spacing: -10px;
   color: black;
-  font-size: 10vw;
-  letter-spacing: -5px;
+  font-size: 12vw;
   height: 168px;
   opacity: 0.5;
   width: 100%;
   text-align: right;
   z-index: 130;
-  float:right;
+  position: relative;
   text-decoration: none;
   transition: transform 6s ease-in-out, color 6s ease-in-out, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
+  background-color: transparent;
 }
 
 .main-title:hover {
-  
   transform: scale(1.1);
   color: #9f7e69;
   font-size: 20vw;
+  letter-spacing: 20px;
   -webkit-transform: scale(1.1);
-  -webkit-transition: transform 3s ease-in-out, color 3s ease-in-out, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
-  transition: transform 3s ease-in-out, color 3s ease-in-out, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
+  -webkit-transition: transform 3s ease-in-out, color 3s ease-in-out,letter-spacing 6s, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
+  transition: transform 3s ease-in-out, color 3s ease-in-out,letter-spacing 6s, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
+}
+
+.main-title:active {
+  -ms-transform: skewY(20deg);
+  transform: skewY(20deg);
 }
 
 .main-title .permahover {
@@ -74,7 +84,6 @@ code {
   text-decoration: none;
   list-style: none;
   text-align: center;
-  
 }
 
 .modal {
@@ -109,6 +118,7 @@ code {
 }
 
 .container {
+  
   position: relative;
   z-index: 500;
   margin-left: 0px;
@@ -123,6 +133,7 @@ code {
 }
 
 .nav-left {
+  background-color: transparent;
   position: fixed;
   z-index: 600;
   display: flex;
@@ -140,11 +151,10 @@ code {
   right: auto;
   bottom: 0%;
   float:left;
-  
-  
 }
 
-.nav-left-item {
+.nav-left-item{
+  background-color: transparent;
   margin-bottom: 100px;
   padding-right: 0px;
   padding-left: 15px;
@@ -153,11 +163,14 @@ code {
   transform: rotate(-90deg);
 }
 
-.nav-left-link {
+.nav-left-link  {
+  background-color: transparent;
   display: block;
   border: 0px solid #000;
+  
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
+
   font-family: Montserrat, sans-serif;
   color: #1a1919;
   font-size: 10px;
@@ -167,6 +180,9 @@ code {
   text-decoration: none;
   text-transform: uppercase; 
   margin-left: 10px;
+
+  animation-duration: 5s;
+  animation-name: slideInFromBottom;
 }
 
 .left-btn, .contact-btn {
@@ -177,9 +193,87 @@ code {
   padding: 10px 30px;
 }
 
-.nav-menu-btn {
-  -webkit-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
+.nav-menu-item {
+  position: static;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    flex-direction: row;
+
+    padding-right: 100px;
+}
+
+.nav-menu-btn  {
+  
+  font-family: Montserrat, sans-serif;
+  color: #1a1919;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 5px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  margin-left: 10%;
+  float: right;
+  
+  animation-duration: 5s;
+  animation-name: slideInFromBottom;
+  
+}
+
+.nav-menu-btn:hover, .footer-link:hover {
+  opacity: 0.5;
+  color: #adc178;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu-container {
+    background-color: transparent;
+    position: fixed;
+    z-index: 600;
+    display: flex;
+    height: 100vh;
+    margin-top: 15%;
+    padding-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    top: 0%;
+    right: auto;
+    bottom: 0%;
+    float:left;
+  }
+}
+  
+
+
+@media screen and (max-width: 768px) {
+  .nav-menu-item {
+  background-color: transparent;
+  margin-bottom: 100px;
+  padding-right: 0px;
+  margin-top: 100px;
+  -webkit-box-flex: 0;
+  flex: 0 auto;
+  transform: rotate(-90deg);
+  }
+}
+  
+
+
+@media screen and (max-width: 768px) {
+  .nav-menu-btn {
+    background-color: transparent;
+  
+  border: 0px solid #000;
+  
+ 
+
   font-family: Montserrat, sans-serif;
   color: #1a1919;
   font-size: 10px;
@@ -188,13 +282,12 @@ code {
   letter-spacing: 5px;
   text-decoration: none;
   text-transform: uppercase; 
-  margin-top: 0px;
-  margin-left: 90vw; 
-}
+  margin-left: 10px;
 
-.nav-menu-btn:hover {
-  opacity: 0.5;
-  color: #adc178;
+  animation-duration: 5s;
+  animation-name: slideInFromTop;
+    
+  }
 }
 
 .nav-left-link:hover {
@@ -246,14 +339,18 @@ code {
     flex: 0 auto;
     transform: rotate(0deg);
   }
+
   .nav-left-link{
     font-size: 10px;
     padding: 10px;
   }
 }
 
-.nav-right {
+.nav-right-container {
   
+}
+
+.nav-right {
   margin-top: 100px;
   margin-right: 10px;
   position: relative;
@@ -261,7 +358,8 @@ code {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  float:right;
+  float:top;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -277,7 +375,8 @@ code {
   grid-column-gap: 16px; 
 }
 
-.nav-link-right { 
+.nav-link-right{ 
+  
   position: relative;
   z-index: 100;
   display: block;
@@ -287,16 +386,19 @@ code {
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 5.5rem;
+  font-size: 10vw;
   color: #9f7e69;
   text-decoration: none;
-  list-style: none;
-    
+  list-style: none;  
+  transform: translate3d(0px, 0px, 0px); 
+  
 }
 
 .nav-link-right:hover {
   color: black;
   text-decoration: none;
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
 }
 
 .nav-link-right:active {
@@ -436,13 +538,14 @@ code {
   }
 }
 
-
 .gallery {
   background-color: black;
+  background-color: transparent;
   
 }
 
 .gallery-content {
+  background-color: transparent;
   margin-left: 30px;
   margin-right: 30px;
   text-align: left;
@@ -450,29 +553,39 @@ code {
 }
 
 .gallery-text {
-  font-size: 14px;
+  background-color: transparent;
+  font-size: 2vw;
   font-family: Merriweather, sans-serif;
   text-transform: lowercase;
   letter-spacing: 3px;
   font-weight: 500;
   text-align: center;
+
+  margin-right: 20vw;
+  margin-left: 20vw;
 }
 
 .gallery-link {
+  display:block;
+  justify-content: center;
+  background-color: transparent;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 1.5vw;
   text-align: center;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  text-align: right;
+  color: #9F7E69; 
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-link:hover {
-  color: #9F7E69;
-  text-decoration: none;
+  
+  color: black;
+  
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
 }
 
+/*
 .gallery-image {
   width: 100vw;
   height: auto;
@@ -484,11 +597,92 @@ code {
   display: flex;
   flex-direction: row;
 }
+*/
+.gallery-image {
+  
+  cursor: -webkit-grab;
+  cursor: grab;
+  
+}
+
+
+.gallery-image:hover {
+  
+  cursor: -webkit-grab;
+  cursor: grab;
+  transform: scale(1.5);
+}
+
 
 .gallery-title {
   text-align: center;
 }
 
-span {
-
+@media screen and (max-width: 767px) {
+  .gallery-text {
+    font-size: 3vw;
+  }
 }
+
+/*
+@media screen and (max-width: 479px) {
+  .gallery-link {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+*/
+.footer-container {
+  display:block;
+  position:relative;
+  width: 100%;
+  bottom: 0;
+  height:100vw;
+  left: 0;
+  
+  
+}
+
+.footer-content {
+  
+}
+
+.footer-item {
+  
+  
+}
+
+.footer-link {
+  display: block;
+
+  text-align: right;
+  text-decoration: none;
+  font-size: 10px;
+  
+  color: black;
+  
+  margin-right: 50px;
+  animation-duration: 5s;
+  animation-name: slideIn;
+}
+
+.nav-link-right {
+  animation-duration: 5s;
+  animation-name: slideInFromBottom;
+}
+
+@keyframes slideIn {
+  from { margin-right: 100%;  opacity: 1; }
+  to { margin-left: 0%; opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+from { margin-bottom: 100%;  opacity: 0; }
+to { margin-top: 0%; opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+  from { margin-bottom: 100%;  opacity: 0; }
+  to { margin-top: 30%; opacity: 1; }
+  }
+

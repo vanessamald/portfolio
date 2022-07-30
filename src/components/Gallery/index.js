@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 
 // images
@@ -56,51 +56,120 @@ function Gallery (props){
   ]);
 
   const [index, setIndex] = useState(0);
+  const [ offset, setOffset ] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+ 
+  useEffect(() => {
+    const onScroll= () => setOffset(window.scrollY);
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  
 
   return (
-    
-    <Carousel variant="dark" activeIndex={index} onSelect={handleSelect}>
+   
+    <Carousel
+    style= {{
+      overflow: 'visible',
+      
+    }}
+     variant="dark"  activeIndex={index} onSelect={handleSelect}>
       {photos.map(({ name, category, id, description, image, image2, image3, image4, url }) => (
        
-        <Carousel.Item key={id} >
+        <Carousel.Item key={id} 
+        
+        >
           <img
-            className="d-block w-100"
+            className="d-block w-100 gallery-image"
             src={image}
             alt={name}
+            style= {{
+              transform: `translate3d(0px, -${offset *2}px, 0px) skewY(${offset/100}deg)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+              position: 'bottom',
+            }}
             />
-            <h3 className="gallery-title" >{name}</h3>
-            
+            <h3 
+            className="gallery-title" 
+            style= {{
+              transform: `translate3d(0px, ${offset/100}px, 0px)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+            }}
+            >
+            {name}</h3>
+           
              <img
-            className="d-block w-100"
+            className="d-block w-100 gallery-image"
             src={image2}
             alt={name}
+            style= {{
+              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+              
+            }}
             />
-            
+
+            <p className="gallery-text"
+            style= {{
+              transform: `translate3d(0px, ${offset/100}px, 0px)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+              
+            }}
+            >{description}</p>
+        
             <img
-            className="d-block w-100"
+            className="d-block w-100 gallery-image"
             src={image3}
             alt={name}
+            style= {{
+              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+              position: 'bottom',
+            }}
             />
              <img
-            className="d-block w-100"
+            className="d-block w-100 gallery-image"
             src={image4}
             alt={name}
+            
+            style= {{
+              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+              position: 'bottom',
+              
+            }}
             />
-            <Carousel.Caption>
-            <p className="gallery-text">{description}</p>
-            <a href={url} className="gallery-link" target="_blank" >Check it out!</a>
+             <Carousel.Caption className="gallery-content"
+             style= {{
+              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+              
+            }}
+             >
+             <a href={url} className="gallery-link" target="_blank" >Check it out!</a>
+           
             
             </Carousel.Caption>
+            
         </Carousel.Item>
         
       ))}
     </Carousel>
+    
    
   )}; 
+  
  
 
 export default Gallery ;

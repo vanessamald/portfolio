@@ -28,7 +28,10 @@ function About() {
             <p className="about-text"> Degree in Public Health</p>
             <p className="about-text"> 14 years customer service experience relating to healthcare </p>
             <p className="about-text"> 6 months of web developer experience</p>
+
+
             </div> 
+            
         </section>
     )
 }

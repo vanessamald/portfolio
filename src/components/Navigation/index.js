@@ -64,25 +64,36 @@ function Home() {
   
     return (
       <>
-        
-          <a className="nav-link-left nav-menu-btn" onClick={() => handleShow()}>
+      <div className='nav-menu-container'>
+        <div className="nav-menu-item">
+          <a className="nav-menu-btn" onClick={() => handleShow()}>
             menu
-            
           </a>
-
-        
-        <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
-          <Modal.Header closeButton>
-            <Modal.Title>Menu</Modal.Title>
+          <a className="nav-menu-btn" href="" target="_blank" >LinkedIn</a>
+          <a className="nav-menu-btn" href="" target="_blank" >VM</a> 
+        </div>
+        <Modal
+        style={{
+        height: fullscreen ? "100vh" : "auto",
+        }} 
+         
+        show={show} 
+        fullscreen={fullscreen} 
+        onHide={() => setShow(false)}>
+          <Modal.Header className="nav-right-container" 
+          closeButton
+          >
+            <Modal.Title  >Menu</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div>
+            
                 <Link to="/resume" className="nav-link-right" >Resume</Link>
                 <Link to="/about" className="nav-link-right" >About</Link>
                 <Link to="/portfolio" className="nav-link-right" >Portfolio</Link>
-            </div>
+            
           </Modal.Body>
         </Modal>
+        </div>
       </>
     );
   }
