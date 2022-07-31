@@ -7,10 +7,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
-
-  
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 code {
@@ -600,16 +597,13 @@ code {
 */
 .gallery-image {
   
-  cursor: -webkit-grab;
-  cursor: grab;
+  
   
 }
 
 
 .gallery-image:hover {
-  
-  cursor: -webkit-grab;
-  cursor: grab;
+  display: block;
   transform: scale(1.5);
 }
 

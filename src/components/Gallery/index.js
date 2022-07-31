@@ -88,7 +88,7 @@ function Gallery (props){
             src={image}
             alt={name}
             style= {{
-              transform: `translate3d(0px, -${offset *2}px, 0px) skewY(${offset/100}deg)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px) skewY(${offset/100}deg)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
@@ -109,7 +109,7 @@ function Gallery (props){
             src={image2}
             alt={name}
             style= {{
-              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               
@@ -118,7 +118,7 @@ function Gallery (props){
 
             <p className="gallery-text"
             style= {{
-              transform: `translate3d(0px, ${offset/100}px, 0px)`,
+              transform: `translate3d(0px, ${offset/100}px, 0px) `,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               
@@ -130,7 +130,7 @@ function Gallery (props){
             src={image3}
             alt={name}
             style= {{
-              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
@@ -142,7 +142,7 @@ function Gallery (props){
             alt={name}
             
             style= {{
-              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
@@ -151,7 +151,7 @@ function Gallery (props){
             />
              <Carousel.Caption className="gallery-content"
              style= {{
-              transform: `translate3d(0px, -${offset/2}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               
