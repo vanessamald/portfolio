@@ -4,9 +4,12 @@ import Header from './components/Header/index.js';
 import Nav from './components/Navigation/index.js';
 import Footer from './components/Footer/index.js';
 import About from './components/About/index.js';
+import Gallery from './components/Gallery/index.js';
 //import Gallery from './components/Gallery/index.js';
 //import About from './components/About/index.js';
 //import Contact from './components/Contact/index.js';
+
+import Layout from './components/Layout/Layout.js';
 
 function App() {
   $(".main-title").one("mouseover", function() {
@@ -14,37 +17,20 @@ function App() {
   });
 
   return (
-    <div>
-     <main>
-      <section>
-      
-      <div>
-      <Header></Header>
-      <Nav/>
-      
-      </div>
+    <>
+    <Layout>
 
+    </Layout>
+    </>
+   
+  )}
       
 
 
-      <div>
-      <a  className="main-title permahover">Vanessa Maldonado</a>
-      </div>
-
-      <div>
-      
-      </div>
-
-    
-      
-      
-      
      
-      </section>
-     </main>
-    </div>
-  );
-}
+
+
+
 
 
 

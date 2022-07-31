@@ -40,6 +40,8 @@ code {
   text-decoration: none;
   transition: transform 6s ease-in-out, color 6s ease-in-out, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
   background-color: transparent;
+
+  padding-bottom: 75%;
 }
 
 .main-title:hover {
@@ -59,6 +61,17 @@ code {
 
 .main-title .permahover {
   display: block;
+}
+
+.main-title::before {
+  content: "Click me";
+  background: transparent;
+  color: #1f1f1f;
+  position: absolute;
+  height: 50%;
+  font-size: 4vw;
+  
+  
 }
 
 .box {
@@ -190,8 +203,14 @@ code {
   padding: 10px 30px;
 }
 
+.nav-menu-modal {
+  width: 100%;
+  transform-origin: 50% 0%;
+  transform: translate(0px, 50px) scale(0.92, 0.92)
+}
+
 .nav-menu-item {
-  position: static;
+    position: static;
     width: 100%;
     height: auto;
     padding-top: 20px;
@@ -491,11 +510,15 @@ code {
 */
 
 .about-content {
+  
+
   line-height: 1.9em;
   font-weight: 400;
   margin-left: 250px;
   margin-right: 30px; 
   text-align: left;
+
+  
 }
 
 .about-text {
@@ -537,11 +560,15 @@ code {
 
 .gallery {
   background-color: black;
-  background-color: transparent;
-  
+  background-color: transparent; 
+}
+
+.gallery-carousel {
+  background-color: #63594f;
 }
 
 .gallery-content {
+  
   background-color: transparent;
   margin-left: 30px;
   margin-right: 30px;
@@ -603,8 +630,7 @@ code {
 
 
 .gallery-image:hover {
-  display: block;
-  transform: scale(1.5);
+  
 }
 
 

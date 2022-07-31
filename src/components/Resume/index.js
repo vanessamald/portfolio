@@ -1,5 +1,5 @@
 import React from "react";
-import resumePreview from "../../assets/images/Vanessa_Resume_Preview.jpggit ";
+import resumePreview from "../../assets/images/Vanessa_Resume_Preview.jpg";
 
 function Resume () {
     return (
