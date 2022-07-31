@@ -9,6 +9,7 @@ import '../../../src/index.css';
 import Gallery from '../Gallery';
 import Photos from '../Gallery';
 import Contact from '../Contact';
+import Resume from '../Resume';
 
 function Nav(props)  {
     return(
@@ -17,7 +18,8 @@ function Nav(props)  {
                 <Route path="/" element={<Home></Home>} />
                 <Route path="/about" element={<About></About>} />
                 <Route path="/portfolio" element={<Gallery/>} />
-                <Route path="/contact" element={<Contact/>} />   
+                <Route path="/contact" element={<Contact/>} /> 
+                <Route path="/resume" element={<Resume/>} />
         </Routes> 
         </BrowserRouter>        
     )
@@ -83,7 +85,7 @@ function Home() {
           <Modal.Header className="nav-right-container" 
           closeButton
           >
-            <Modal.Title  >Menu</Modal.Title>
+            <Modal.Title>Menu</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             
