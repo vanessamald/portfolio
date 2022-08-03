@@ -75,6 +75,7 @@ function Gallery (props){
     <Carousel 
     style= {{
       overflow: 'visible', 
+      backgroundColor: 'rgb(249, 247, 241)',
       
     }}
      variant="dark"  activeIndex={index} onSelect={handleSelect}>
@@ -85,10 +86,7 @@ function Gallery (props){
           <h2
           style= {{
             textAlign: 'center',
-            backgroundColor: '#63594f',
             paddingTop: '100px',
-            
-
           }}
           >My Work</h2>
           <img
@@ -96,7 +94,7 @@ function Gallery (props){
             src={image}
             alt={name}
             style= {{
-              transform: `translate3d(0px, -${offset}px, 0px) skewY(${offset/100}deg)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px) `, 
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
@@ -105,7 +103,7 @@ function Gallery (props){
             <h3 
             className="gallery-title" 
             style= {{
-              transform: `translate3d(0px, ${offset}px, 0px)`,
+              transform: `translate3d(0px, ${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
             }}
@@ -117,7 +115,7 @@ function Gallery (props){
             src={image2}
             alt={name}
             style= {{
-              transform: `translate3d(0px, -${offset}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               
@@ -126,7 +124,7 @@ function Gallery (props){
 
             <p className="gallery-text"
             style= {{
-              transform: `translate3d(0px, ${offset}px, 0px) `,
+              transform: `translate3d(0px, ${offset/100}px, 0px) `,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               
@@ -138,7 +136,7 @@ function Gallery (props){
             src={image3}
             alt={name}
             style= {{
-              transform: `translate3d(0px, -${offset}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
@@ -150,7 +148,7 @@ function Gallery (props){
             alt={name}
             
             style= {{
-              transform: `translate3d(0px, -${offset}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
@@ -159,14 +157,13 @@ function Gallery (props){
             />
              <Carousel.Caption className="gallery-content"
              style= {{
-              transform: `translate3d(0px, -${offset}px, 0px)`,
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               
             }}
              >
              <a href={url} className="gallery-link" target="_blank" >Check it out!</a>
-           
             
             </Carousel.Caption>
             

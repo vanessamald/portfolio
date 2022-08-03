@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import $ from 'jquery';
+
 import Header from './components/Header/index.js';
 import Nav from './components/Navigation/index.js';
-import Footer from './components/Footer/index.js';
+
 import About from './components/About/index.js';
 import Gallery from './components/Gallery/index.js';
 //import Gallery from './components/Gallery/index.js';
@@ -12,15 +12,20 @@ import Gallery from './components/Gallery/index.js';
 import Layout from './components/Layout/Layout.js';
 
 function App() {
-  $(".main-title").one("mouseover", function() {
-    $(".main-title").addClass('permahover');
-  });
+ 
 
   return (
     <>
-    <Layout>
+           <div>
+            <div>
+            <Header></Header>
+            </div>
 
-    </Layout>
+            <main>
+              <About></About>
+              <Gallery></Gallery>
+            </main>            
+        </div>
     </>
    
   )}

@@ -16,7 +16,7 @@ code {
 }
 
 * {
-  background-color: #e5ddc4;
+  
   font-family: Montserrat, sans-serif;
   
   color: #9f7e69;
@@ -41,7 +41,7 @@ code {
   transition: transform 6s ease-in-out, color 6s ease-in-out, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
   background-color: transparent;
 
-  padding-bottom: 75%;
+  
 }
 
 .main-title:hover {
@@ -69,9 +69,7 @@ code {
   color: #1f1f1f;
   position: absolute;
   height: 50%;
-  font-size: 4vw;
-  
-  
+  font-size: 4vw; 
 }
 
 .box {
@@ -136,9 +134,8 @@ code {
 
 .nav-left-line {
   width: 1px;
-  height: 100px;
-  margin-top: 10px;
-  margin-bottom: 80px;
+  height: 200px;
+  margin-bottom: 20px;
   background-color: #1a1919;
 }
 
@@ -148,8 +145,8 @@ code {
   z-index: 600;
   display: flex;
   height: 100vh;
-  padding-top: 15%;
-  padding-bottom: 30px;
+  padding-top: 10%;
+  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -161,6 +158,8 @@ code {
   right: auto;
   bottom: 0%;
   float:left;
+
+  background-color: rgb(249, 247, 241);
 }
 
 .nav-left-item{
@@ -191,8 +190,7 @@ code {
   text-transform: uppercase; 
   margin-left: 10px;
 
-  animation-duration: 5s;
-  animation-name: slideInFromBottom;
+  
 }
 
 .left-btn, .contact-btn {
@@ -206,7 +204,8 @@ code {
 .nav-menu-modal {
   width: 100%;
   transform-origin: 50% 0%;
-  transform: translate(0px, 50px) scale(0.92, 0.92)
+  transform: translate(0px, 50px) scale(0.92, 0.92);
+  
 }
 
 .nav-menu-item {
@@ -233,8 +232,7 @@ code {
   margin-left: 10%;
   float: right;
   
-  animation-duration: 5s;
-  animation-name: slideInFromBottom;
+  
   
 }
 
@@ -321,6 +319,9 @@ code {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-direction: row;
+    margin-top: 90vmax;
+    position: fixed;
+    justify-content: center;
   }
 }
 
@@ -354,6 +355,8 @@ code {
     -webkit-box-flex: 0;
     flex: 0 auto;
     transform: rotate(0deg);
+    margin-top: 90vmax;
+    position: fixed;
   }
 
   .nav-left-link{
@@ -402,7 +405,7 @@ code {
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 10vw;
+  font-size: 8vw;
   color: #9f7e69;
   text-decoration: none;
   list-style: none;  
@@ -509,15 +512,20 @@ code {
 }
 */
 
-.about-content {
-  
 
+
+.about-container, .about-subtitle, .about-text, .about-content, .about-title {
+  background: transparent;
+  
+  
+}
+
+.about-content {
   line-height: 1.9em;
   font-weight: 400;
   margin-left: 250px;
   margin-right: 30px; 
-  text-align: left;
-
+  text-align: left;  
   
 }
 
@@ -527,10 +535,14 @@ code {
   text-transform: initial;
   letter-spacing: 3px;
   font-weight: 500;
+  color: black;
+
+  
 }
 
 .about-title {
   font-size: 50px;
+  
 }
 
 .profile-pic {
@@ -538,7 +550,7 @@ code {
   height: auto;
   border-radius: 100%;
   margin-left: auto;
-  margin-right: 30px;
+  
   margin-top: 0px;
   margin-bottom: 50px;
   float: right; 
@@ -564,7 +576,7 @@ code {
 }
 
 .gallery-carousel {
-  background-color: #63594f;
+  
 }
 
 .gallery-content {
@@ -643,49 +655,7 @@ code {
     font-size: 3vw;
   }
 }
-
-/*
-@media screen and (max-width: 479px) {
-  .gallery-link {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-*/
-.footer-container {
-  display:block;
-  position:relative;
-  width: 100%;
-  bottom: 0;
-  height:100vw;
-  left: 0;
   
-  
-}
-
-.footer-content {
-  
-}
-
-.footer-item {
-  
-  
-}
-
-.footer-link {
-  display: block;
-
-  text-align: right;
-  text-decoration: none;
-  font-size: 10px;
-  
-  color: black;
-  
-  margin-right: 50px;
-  animation-duration: 5s;
-  animation-name: slideIn;
-}
-
 .nav-link-right {
   animation-duration: 5s;
   animation-name: slideInFromBottom;
@@ -693,6 +663,11 @@ code {
 
 @keyframes slideIn {
   from { margin-right: 100%;  opacity: 1; }
+  to { margin-left: 0%; opacity: 1; }
+}
+
+@keyframes slideFromLeft {
+  from { margin-left: 100%;  opacity: 1; }
   to { margin-left: 0%; opacity: 1; }
 }
 
@@ -705,4 +680,70 @@ to { margin-top: 0%; opacity: 1; }
   from { margin-bottom: 100%;  opacity: 0; }
   to { margin-top: 30%; opacity: 1; }
   }
+
+@keyframes slideFromRight {
+  from { margin-right: 0%;  opacity: 1; }
+  to { margin-right: 70%; opacity: 1; }
+}
+
+.resume-preview {
+  position: relative;
+  display: block;
+  
+  margin-left: 20px;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.resume-preview:hover {
+  transform: scale(1.5);
+  transition: 3s;
+}
+
+.resume-link {
+  
+  text-decoration: none;
+  
+  transform: translate(0px, 0px);
+  opacity: 1;
+  
+  color: black;
+  font-size: 3vw;
+  
+  
+  
+}
+
+.resume-link:hover {
+  color: white;
+  opacity: 0.5;
+  
+}
+
+.resume-item {
+  display: grid;
+  width: 100%;
+  
+  
+  
+}
+
+.resume-content {
+  
+  
+  
+}
+
+.resume-container {
+  
+}
+
+.menu-button:active {
+  transform: rotate(-90deg);
+}
+
+.contact {
+  text-decoration: none;
+  color: #9f7e69;
+}
 
