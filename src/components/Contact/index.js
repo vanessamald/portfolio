@@ -10,7 +10,7 @@ function Contact () {
     const [fullscreen, setFullscreen] = useState(true);
 
     return (
-<>
+        <>
         <div className="nav-left-item"> 
         <a className="nav-left-link left-btn"  onClick={handleShow}>
           Contact
@@ -21,13 +21,14 @@ function Contact () {
         style={{
             animationDuration: "3s",
             animationName: "slideFromLeft",
-            backgroundColor: "#1f1f1f", 
+           
+            
         }}
         >
         <div 
         style={{
             padding: "60px",
-            backgroundColor: "#1f1f1f",
+            backgroundColor: "#b5aa9c",
             width: "100%"
             
         }}
@@ -35,7 +36,7 @@ function Contact () {
             <div
             style={{
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: "column",
                 justifyContent: "space-around",
                 alignItems: "center",
                 width: "100%",
@@ -43,95 +44,47 @@ function Contact () {
                 fontSize: "30px",
                 fontFamily: "SilkSerif-Regular",
                 flexWrap: "wrap",
-                color: "white"
+                
+                
                 
             }}
             >
 
-            <div className="">
-            <p 
-            style={{ 
-                animationDuration: "3.5s",
-                animationName: "slideInFromBottom", 
-            }}>h</p>
-            <p
-            style={{
-                animationDuration: "4s",
-                animationName: "slideInFromBottom", 
-            }}>e</p>
-            <p
-             style={{
-                animationDuration: "4.5s",
-                animationName: "slideInFromBottom", 
-            }} >l</p>
-            <p
-             style={{
-                animationDuration: "5s",
-                animationName: "slideInFromBottom", 
-            }}>l</p>
-            <p
-             style={{
-                animationDuration: "5.5s",
-                animationName: "slideInFromBottom", 
-            }}>o</p>
-            <p
-             style={{
-                animationDuration: "6s",
-                animationName: "slideInFromBottom", 
-            }}>.</p>
-            <p
-             style={{
-                animationDuration: "6.5s",
-                animationName: "slideInFromBottom", 
-            }}>h</p>
-             <p
-             style={{
-                animationDuration: "7s",
-                animationName: "slideInFromBottom", 
-            }}>o</p>
-             <p
-             style={{
-                animationDuration: "7.5s",
-                animationName: "slideInFromBottom", 
-            }}>l</p>
-             <p
-             style={{
-                animationDuration: "8s",
-                animationName: "slideInFromBottom", 
-            }}>a</p>
+            <p> Get In Touch </p>
             
-            </div>
-            <a 
+            <a className="contact-link" 
             style ={{
                 textDecoration: "none",
                 color: "#9f7e69",
-                fontSize: "12px"
+                fontSize: "6vw"
             }}
             target="_blank" href="mailto:vnessamaldon@gmail.com">Email</a>
             
-            <a
+            <a className="contact-link"
             style={{
                 textDecoration: "none",
                 color: "#9f7e69",
-                fontSize: "12px"
+                fontSize: "6vw",
+                marginTop: "0px"
+
 
             }}
              target="_blank" href="https://www.linkedin.com/in/vanessa-maldonado-807344191/">LinkedIn </a>
-            </div>
+            
 
           <button 
             style={{
-                float: "left",
+                fontSize: '12px',
+                
                 
             }}
             className='contact-btn' onClick={handleClose}>
             Close
           </button>
+          </div>
         </div>
     </Modal>
-        
-</>
-    )
-}
+    </>
+)}
 
 export default Contact;

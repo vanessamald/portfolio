@@ -11,8 +11,8 @@ function Resume () {
         return () => window.removeEventListener('scroll', onScroll);
       }, []);
 
-    return (
-        <div className="resume-container">
+        return (
+        <div className="resume-container" id="resume">
             <div className="resume-content">
                 <div className="resume-item">
                     
@@ -29,8 +29,6 @@ function Resume () {
                     marginBottom: "100px",
                     }}
                     ></img>
-    
-                
             </div>
         </div>
     )

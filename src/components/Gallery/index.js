@@ -72,10 +72,16 @@ function Gallery (props){
 
   return (
    
-    <Carousel 
+    <Carousel id="portfolio" fade
     style= {{
       overflow: 'visible', 
-      backgroundColor: 'rgb(249, 247, 241)',
+      //backgroundColor: 'rgb(249, 247, 241)',
+      
+      
+
+      // testing here
+      backgroundColor: 'rgb(181, 170, 156)',
+      alignItems: 'center'
       
     }}
      variant="dark"  activeIndex={index} onSelect={handleSelect}>
@@ -87,6 +93,9 @@ function Gallery (props){
           style= {{
             textAlign: 'center',
             paddingTop: '100px',
+            fontSize: '50px',
+            
+
           }}
           >My Work</h2>
           <img
@@ -94,10 +103,14 @@ function Gallery (props){
             src={image}
             alt={name}
             style= {{
-              transform: `translate3d(0px, -${offset/100}px, 0px) `, 
+              //transform: `translate3d(0px, -${offset/100}px, 0px) `, 
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
-              position: 'bottom',
+              
+              marginTop: '0'
+              
+              
             }}
             />
             <h3 
@@ -106,75 +119,103 @@ function Gallery (props){
               transform: `translate3d(0px, ${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
+              textAlign: 'center',
+              marginTop: '0',
+
+              fontStyle: 'italic',
+              opacity: '0.7',
+              fontFamily: 'Ogg',
+              fontSize: '80px',
+              letterSpacing: '-10px',
+              textTransform: 'lowercase', 
             }}
             >
             {name}</h3>
+
+            <p className="gallery-content"
+             style= {{
+              transform: `translate3d(0px, -${offset/100}px, 0px)`,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+              marginTop: '10px',
+            }}
+             >
+             <a 
+             style={{
+              color: '#4d453e'
+             }}
+             href={url} className="gallery-link" target="_blank" >Check it out!</a>
+            
+            </p>
            
              <img
             className="d-block w-100 gallery-image"
             src={image2}
             alt={name}
             style= {{
+              marginTop: '0px',
               transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               
+              
             }}
             />
 
-            <p className="gallery-text"
-            style= {{
-              transform: `translate3d(0px, ${offset/100}px, 0px) `,
-              transition: 'transform 0.5s ease-in-out',
-              background: 'transparent',
-              
-            }}
-            >{description}</p>
-        
             <img
             className="d-block w-100 gallery-image"
             src={image3}
             alt={name}
             style= {{
+              marginTop: '0px',
               transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
             }}
             />
+
+         
+
              <img
             className="d-block w-100 gallery-image"
             src={image4}
             alt={name}
             
             style= {{
+              marginTop: '0px',
               transform: `translate3d(0px, -${offset/100}px, 0px)`,
               transition: 'transform 0.5s ease-in-out',
               background: 'transparent',
               position: 'bottom',
               
-            }}
-            />
-             <Carousel.Caption className="gallery-content"
-             style= {{
-              transform: `translate3d(0px, -${offset/100}px, 0px)`,
-              transition: 'transform 0.5s ease-in-out',
-              background: 'transparent',
+              
               
             }}
-             >
-             <a href={url} className="gallery-link" target="_blank" >Check it out!</a>
-            
-            </Carousel.Caption>
+            />
+               <p className="gallery-text"
+            style= {{
+              marginTop: '0px',
+              transform: `translate3d(0px, ${offset/100}px, 0px) `,
+              transition: 'transform 0.5s ease-in-out',
+              background: 'transparent',
+
+              fontSize: '12px',
+              fontFamily: 'Merriweather, sans-serif',
+              textTransform: 'initial',
+              letterSpacing: '3px',
+              fontWeight: '500',
+              color: 'black',
+              marginBottom:'100px'
+              
+            }}
+            >{description}</p>
+          
             
         </Carousel.Item>
         
       ))}
     </Carousel>
-    
-   
   )}; 
   
- 
-
 export default Gallery ;

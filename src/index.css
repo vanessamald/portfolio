@@ -16,9 +16,7 @@ code {
 }
 
 * {
-  
   font-family: Montserrat, sans-serif;
-  
   color: #9f7e69;
   text-transform: uppercase;
   font-weight: 500;
@@ -39,9 +37,7 @@ code {
   position: relative;
   text-decoration: none;
   transition: transform 6s ease-in-out, color 6s ease-in-out, font-size 6s ease-in-out, -webkit-transform 6s ease-in-out;
-  background-color: transparent;
-
-  
+  background-color: transparent; 
 }
 
 .main-title:hover {
@@ -126,7 +122,6 @@ code {
 }
 
 .container {
-  
   position: relative;
   z-index: 500;
   margin-left: 0px;
@@ -146,7 +141,6 @@ code {
   display: flex;
   height: 100vh;
   padding-top: 10%;
-  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -158,8 +152,8 @@ code {
   right: auto;
   bottom: 0%;
   float:left;
-
   background-color: rgb(249, 247, 241);
+  background: transparent;
 }
 
 .nav-left-item{
@@ -176,10 +170,8 @@ code {
   background-color: transparent;
   display: block;
   border: 0px solid #000;
-  
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
-
   font-family: Montserrat, sans-serif;
   color: #1a1919;
   font-size: 10px;
@@ -188,9 +180,7 @@ code {
   letter-spacing: 5px;
   text-decoration: none;
   text-transform: uppercase; 
-  margin-left: 10px;
-
-  
+  margin-left: 10px; 
 }
 
 .left-btn, .contact-btn {
@@ -215,12 +205,10 @@ code {
     padding-top: 20px;
     padding-bottom: 0px;
     flex-direction: row;
-
     padding-right: 100px;
 }
 
 .nav-menu-btn  {
-  
   font-family: Montserrat, sans-serif;
   color: #1a1919;
   font-size: 10px;
@@ -230,10 +218,7 @@ code {
   text-decoration: none;
   text-transform: uppercase;  
   margin-left: 10%;
-  float: right;
-  
-  
-  
+  float: right; 
 }
 
 .nav-menu-btn:hover, .footer-link:hover {
@@ -264,8 +249,6 @@ code {
   }
 }
   
-
-
 @media screen and (max-width: 768px) {
   .nav-menu-item {
   background-color: transparent;
@@ -278,16 +261,10 @@ code {
   }
 }
   
-
-
 @media screen and (max-width: 768px) {
   .nav-menu-btn {
-    background-color: transparent;
-  
+  background-color: transparent;
   border: 0px solid #000;
-  
- 
-
   font-family: Montserrat, sans-serif;
   color: #1a1919;
   font-size: 10px;
@@ -297,7 +274,6 @@ code {
   text-decoration: none;
   text-transform: uppercase; 
   margin-left: 10px;
-
   animation-duration: 5s;
   animation-name: slideInFromTop;
     
@@ -341,7 +317,7 @@ code {
     width: 100px;
     height: 1px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom:0px;
   }
 }
 
@@ -351,7 +327,6 @@ code {
     margin-bottom: 0px;
     margin-right: 0px;
     padding-right: 0px;
-    
     -webkit-box-flex: 0;
     flex: 0 auto;
     transform: rotate(0deg);
@@ -378,7 +353,6 @@ code {
   right: 0%;
   bottom: 0%;
   float:top;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -395,7 +369,6 @@ code {
 }
 
 .nav-link-right{ 
-  
   position: relative;
   z-index: 100;
   display: block;
@@ -405,12 +378,14 @@ code {
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 8vw;
+  font-size: 6vw;
   color: #9f7e69;
   text-decoration: none;
   list-style: none;  
   transform: translate3d(0px, 0px, 0px); 
   
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 5px;
 }
 
 .nav-link-right:hover {
@@ -418,6 +393,7 @@ code {
   text-decoration: none;
   -ms-transform: skewX(-20deg);
   transform: skewX(-20deg);
+  
 }
 
 .nav-link-right:active {
@@ -451,15 +427,6 @@ code {
     margin-left: 10px;
     font-size: 50px; 
   }
-}
-  
-.contact-form {
-  text-transform: uppercase;
-  color: #6c584c;
-}
-
-.contact-form:active {
-  background-color: #000;
 }
 
 /*
@@ -512,20 +479,19 @@ code {
 }
 */
 
-
-
 .about-container, .about-subtitle, .about-text, .about-content, .about-title {
-  background: transparent;
-  
-  
+  background: transparent;  
 }
 
 .about-content {
   line-height: 1.9em;
   font-weight: 400;
-  margin-left: 250px;
-  margin-right: 30px; 
-  text-align: left;  
+  
+  padding: 120px;
+  text-align: left; 
+  margin-left: 30px;
+  
+   
   
 }
 
@@ -535,14 +501,11 @@ code {
   text-transform: initial;
   letter-spacing: 3px;
   font-weight: 500;
-  color: black;
-
-  
+  color: black; 
 }
 
 .about-title {
-  font-size: 50px;
-  
+  font-size: 50px;  
 }
 
 .profile-pic {
@@ -565,8 +528,7 @@ code {
 
 @media screen and (max-width: 767px) {
   .about-content {
-    margin-left: 30px;
-    margin-right: 30px;
+    padding: 20px;
   }
 }
 
@@ -602,11 +564,13 @@ code {
 }
 
 .gallery-link {
+  
+
   display:block;
   justify-content: center;
   background-color: transparent;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
   color: #9F7E69; 
   margin-right: 0;
@@ -614,11 +578,10 @@ code {
 }
 
 .gallery-link:hover {
-  
-  color: black;
-  
+  color: white;
   -ms-transform: skewX(-20deg);
   transform: skewX(-20deg);
+  text-decoration: line-through;
 }
 
 /*
@@ -635,7 +598,6 @@ code {
 }
 */
 .gallery-image {
-  
   
   
 }
@@ -703,10 +665,8 @@ to { margin-top: 0%; opacity: 1; }
 .resume-link {
   
   text-decoration: none;
-  
   transform: translate(0px, 0px);
   opacity: 1;
-  
   color: black;
   font-size: 3vw;
   
@@ -738,12 +698,39 @@ to { margin-top: 0%; opacity: 1; }
   
 }
 
-.menu-button:active {
-  transform: rotate(-90deg);
-}
+
 
 .contact {
   text-decoration: none;
   color: #9f7e69;
 }
+
+.contact-link:hover {
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  color: black;
+  text-decoration: line-through;
+}
+
+.contact-btn:hover {
+  opacity: 0.5;
+}
+
+@keyframes marquee {
+  0% {
+    
+    transform: translateX(1000px)
+  }
+  100% {
+    transform: translateX(-400px)
+  }
+}
+
+@keyframes image-animation {
+  from { height: 0%;  opacity: 0; }
+  to { height: 100%; opacity: 1; }
+}
+
+
+
 
