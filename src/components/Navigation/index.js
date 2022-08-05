@@ -11,8 +11,8 @@ function Nav(props)  {
     return(
       <HashRouter>
       <Routes>
-              <Route exact path="/" element={<Home/>}/>
-              <Route exact path="resume" element={<Resume/>}/>
+              <Route exact path="/portfolio" element={<Home/>}/>
+              <Route exact path="/portfolio/resume" element={<Resume/>}/>
       </Routes> 
       </HashRouter> 
     )
