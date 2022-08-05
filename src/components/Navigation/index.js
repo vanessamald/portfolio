@@ -81,7 +81,7 @@ const scrollToRef = useRef();
             <Modal.Title>Menu</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-                <a onClick={() => window.location.replace("/#about")} className="nav-link-right">About</a> 
+                <a onClick={() => window.location.replace("/portfolio/#about")} className="nav-link-right">About</a> 
                 <a onClick={() => window.location.replace("/#resume")} className="nav-link-right">Resume</a> 
                 <a onClick={() => window.location.replace("/#portfolio")} className="nav-link-right" >Portfolio</a>
           </Modal.Body>
