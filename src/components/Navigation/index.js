@@ -40,25 +40,25 @@ const scrollToRef = useRef();
           >
          <a className="header-menu" onClick={() => handleShow()} 
          style={{
-          width: "40px",
+          width: "50px",
           height: "1.5px",
           backgroundColor: "#15242e",
           marginTop: '30px',
-          marginLeft: "90vw",
+          marginLeft: "80vw",
           position: "absolute",
-          transform: "rotate(-90deg)"
+          
          }}
          >
         </a> 
         <a className="header-menu" onClick={() => handleShow()} 
         style={{
-          width: "40px",
+          width: "50px",
           height: "1.5px",
           backgroundColor: "#15242e",
           marginTop: '30px',
-          marginLeft: "88vw",
+          marginLeft: "80vw",
           position: "absolute", 
-          transform: "rotate(-90deg)" 
+          
         }}
         >
         </a>
