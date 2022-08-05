@@ -17,7 +17,7 @@ function Footer() {
                 backgroundColor: 'transparent',
                 paddingTop: '50px',
                 paddingBottom: '100px',
-                backgroundColor: '#b5aa9c',
+                backgroundColor: 'rgb(249, 247, 241)',
                 borderTop: '1px solid #272727' 
             }}
             >
@@ -37,7 +37,7 @@ function Footer() {
                         letterSpacing: '-10px',
                         textTransform: 'lowercase'
                     }}
-                    >Minimal . Modern . Creative . </p> 
+                    >Now . Accepting . Freelance . Work </p> 
                 </div>   
         </div>
     )

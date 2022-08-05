@@ -5,11 +5,14 @@ import { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../src/index.css';
 
+import Resume from '../Resume/index';
+
 function Nav(props)  {
     return(
       <HashRouter>
       <Routes>
               <Route exact path="/" element={<Home/>}/>
+              <Route exact path="resume" element={<Resume/>}/>
       </Routes> 
       </HashRouter> 
     )
@@ -35,25 +38,27 @@ const scrollToRef = useRef();
             
           }}
           >
-         <a 
+         <a className="header-menu" onClick={() => handleShow()} 
          style={{
-          marginTop: "10px",
-          width: "50px",
-          height: "1.6px",
+          width: "40px",
+          height: "1.5px",
           backgroundColor: "#15242e",
-          marginBottom: "5px",
+          marginTop: '30px',
           marginLeft: "90vw",
           position: "absolute",
+          transform: "rotate(-90deg)"
          }}
          >
         </a> 
-        <a 
+        <a className="header-menu" onClick={() => handleShow()} 
         style={{
-          width: "50px",
-          height: "1.6px",
+          width: "40px",
+          height: "1.5px",
           backgroundColor: "#15242e",
-          marginLeft: "90vw",
-          position: "absolute",  
+          marginTop: '30px',
+          marginLeft: "88vw",
+          position: "absolute", 
+          transform: "rotate(-90deg)" 
         }}
         >
         </a>

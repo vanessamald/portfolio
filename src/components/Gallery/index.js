@@ -80,7 +80,7 @@ function Gallery (props){
       
 
       // testing here
-      backgroundColor: 'rgb(181, 170, 156)',
+      backgroundColor: "rgb(249, 247, 241)",
       alignItems: 'center'
       
     }}

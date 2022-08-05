@@ -130,7 +130,7 @@ code {
 .nav-left-line {
   width: 1px;
   height: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   background-color: #1a1919;
 }
 
@@ -140,7 +140,7 @@ code {
   z-index: 600;
   display: flex;
   height: 100vh;
-  padding-top: 10%;
+  padding-top: 5%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -663,29 +663,25 @@ to { margin-top: 0%; opacity: 1; }
 }
 
 .resume-link {
-  
+  font-size: 2vw; 
   text-decoration: none;
-  transform: translate(0px, 0px);
-  opacity: 1;
+  font-family: Montserrat, sans-serif;
   color: black;
-  font-size: 3vw;
-  
-  
-  
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
 }
 
 .resume-link:hover {
-  color: white;
-  opacity: 0.5;
-  
+  color: #1f1f1f;
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  text-decoration: line-through; 
 }
 
 .resume-item {
   display: grid;
-  width: 100%;
-  
-  
-  
+  width: 100%; 
 }
 
 .resume-content {
@@ -705,11 +701,19 @@ to { margin-top: 0%; opacity: 1; }
   color: #9f7e69;
 }
 
+.contact-link {
+  text-decoration: none;
+  color: #9f7e69;
+}
+
 .contact-link:hover {
-  -ms-transform: skewX(-20deg);
-  transform: skewX(-20deg);
   color: black;
   text-decoration: line-through;
+  position: relative;
+  top: -5px;
+  border: 2px solid #272727;
+  border-radius: 50%;
+  padding: 28px 50px 28px 50px;
 }
 
 .contact-btn:hover {
@@ -730,6 +734,8 @@ to { margin-top: 0%; opacity: 1; }
   from { height: 0%;  opacity: 0; }
   to { height: 100%; opacity: 1; }
 }
+
+
 
 
 

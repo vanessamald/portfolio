@@ -16,17 +16,29 @@ function Resume () {
             <div className="resume-content">
                 <div className="resume-item">
                     
-                    <a className="resume-link" target="_blank" 
+                   
+                    <h2
+                    style={{
+                        marginTop: "75px"
+                    }}
+                    >Resume</h2>
+                        <a className="resume-link"
+                        style={{
+                            
+
+                        }} 
+                        target="_blank" 
+                        href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:4b6af2cc-b459-3e23-bef6-cad7f0f7a782"
+                        >
+                        Link to Resume
+                        </a>
                     
-                    href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:4b6af2cc-b459-3e23-bef6-cad7f0f7a782"
-                    >
-                    <h2>Resume</h2>
-                    </a>
                     </div>
 
                     <img className="resume-preview" src={resumePreview}
                     style = {{ 
-                    marginBottom: "100px",
+                    marginBottom: "0px",
+                    marginTop: "100px"
                     }}
                     ></img>
             </div>

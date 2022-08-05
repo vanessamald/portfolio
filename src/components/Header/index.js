@@ -18,16 +18,17 @@ function Header() {
         <div className="container">
           <div className="nav-left">
            <div className="nav-left-item">
-                <a className="nav-left-link" href="https://github.com/vanessamald">git</a>
+                <a className="nav-left-link" href="/">home</a>
             </div>
             <div className="nav-left-line" ></div>
+
             <div className="nav-left-item">
-                <a className="nav-left-link" href="" target="_blank" ></a>
+                <a className="nav-left-link" href="https://github.com/vanessamald" target="_blank" >git</a>
             </div> 
             <div className="nav-line" ></div>
             <Contact ></Contact>
         </div>
-        <div
+        <div 
             style= {{
             width: "100%",
             height: `${offset > 0 ? "10%" : "100%"}`,
@@ -38,14 +39,12 @@ function Header() {
             left: "0",
             paddingBottom: "100px",
             paddingTop: "0px",
+
+            
             }}
         > 
                    <Nav></Nav>
-            <a href="/"
-            style={{
-                textDecoration: "none"
-            }}
-            >
+           
             <h1 className="" 
             style={{
                 color: "#3d352e",
@@ -63,12 +62,8 @@ function Header() {
                 letterSpacing: "4px",
                 marginBottom: "0px",
             }}   
-            >Vanessa</h1></a>
-            <a href="/"
-            style={{
-                textDecoration: "none"
-            }}
-            >
+            >Vanessa</h1>
+           
             <h2 className="" 
             style={{
             color: "#3d352e",
@@ -85,7 +80,7 @@ function Header() {
             paddingBottom: "100px",
             letterSpacing: "2px",
             }}   
-            >Maldonado</h2></a>
+            >Maldonado</h2>
             </div> 
     </div>
     );

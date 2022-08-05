@@ -124,7 +124,13 @@ function About() {
                 
                 backgroundSize: '0var(20%),100% var(20%)'
             }}>Fun Fact: </em>My favorite language is React.</p>
+
+           
+            <Resume></Resume>
             </div> 
+
+            
+           
             
         </section>
     )

@@ -27,9 +27,10 @@ function Contact () {
         >
         <div 
         style={{
-            padding: "60px",
+            
             backgroundColor: "#b5aa9c",
-            width: "100%"
+            width: "100%",
+            height: "100%"
             
         }}
         >
@@ -37,11 +38,11 @@ function Contact () {
             style={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-around",
+                justifyContent: "center",
                 alignItems: "center",
                 width: "100%",
                 marginTop: "10px",
-                fontSize: "30px",
+                fontSize: "8vw",
                 fontFamily: "SilkSerif-Regular",
                 flexWrap: "wrap",
                 
@@ -49,25 +50,40 @@ function Contact () {
                 
             }}
             >
+            <div
+            style={{
+               
+            }}
+            > 
 
-            <p> Get In Touch </p>
+        </div>
+            <p
+            style={{
+                color: '#1f1f1f',
+                fontFamily: 'Styrene',
+                letterSpacing: '4px',
+                fontSize: '50px',
+                marginTop: '40px',
+
+                
+            }}
+            > Get In Touch! </p>
             
             <a className="contact-link" 
             style ={{
-                textDecoration: "none",
-                color: "#9f7e69",
-                fontSize: "6vw"
+                
+                
+                fontSize: "26px",
+                marginBottom: '40px'
             }}
             target="_blank" href="mailto:vnessamaldon@gmail.com">Email</a>
             
             <a className="contact-link"
             style={{
-                textDecoration: "none",
-                color: "#9f7e69",
-                fontSize: "6vw",
-                marginTop: "0px"
-
-
+                
+                fontSize: "26px",
+                marginTop: "0px",
+                marginBottom: '100px'
             }}
              target="_blank" href="https://www.linkedin.com/in/vanessa-maldonado-807344191/">LinkedIn </a>
             
@@ -77,10 +93,13 @@ function Contact () {
                 fontSize: '12px',
                 
                 
+                
             }}
             className='contact-btn' onClick={handleClose}>
             Close
           </button>
+
+          
           </div>
         </div>
     </Modal>
