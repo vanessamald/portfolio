@@ -32,7 +32,7 @@ const scrollToRef = useRef();
       <div>
          <div onClick={() => handleShow()} className='menu-button'
           style= {{
-            
+            padding: '10px',
             marginTop: '10px',
            
             
