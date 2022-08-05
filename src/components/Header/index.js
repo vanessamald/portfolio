@@ -18,7 +18,7 @@ function Header() {
         <div className="container">
           <div className="nav-left">
            <div className="nav-left-item">
-                <a className="nav-left-link" href="/">home</a>
+                <a className="nav-left-link" href="/portfolio/">home</a>
             </div>
             <div className="nav-left-line" ></div>
 

@@ -11,7 +11,7 @@ function Nav(props)  {
     return(
       <HashRouter>
       <Routes>
-              <Route exact path="/portfolio" element={<Home/>}/>
+              <Route exact path="/portfolio/" element={<Home/>}/>
               <Route exact path="/portfolio/resume" element={<Resume/>}/>
       </Routes> 
       </HashRouter> 
@@ -32,7 +32,7 @@ const scrollToRef = useRef();
       <div>
          <div onClick={() => handleShow()} className='menu-button'
           style= {{
-            padding: '10px',
+            
             marginTop: '10px',
            
             
