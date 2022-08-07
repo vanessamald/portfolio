@@ -38,7 +38,8 @@ function Resume () {
                     <img className="resume-preview" src={resumePreview}
                     style = {{ 
                     marginBottom: "0px",
-                    marginTop: "100px"
+                    marginTop: "100px",
+                    
                     }}
                     ></img>
             </div>

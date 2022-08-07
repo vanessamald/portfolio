@@ -101,8 +101,8 @@ function About() {
                 fontStyle: 'italic',
                 opacity: '0.7',
                 fontFamily: 'Ogg',
-                fontSize: '80px',
-                letterSpacing: '-10px',
+                fontSize: '60px',
+                letterSpacing: '-5px',
                 textTransform: 'lowercase',
                 }} 
             > 6 months of web developer experience</p>
@@ -115,14 +115,15 @@ function About() {
                 fontStyle: 'italic',
                 opacity: '0.7',
                 fontFamily: 'Ogg',
-                fontSize: '80px',
-                letterSpacing: '-10px',
+                fontSize: '64px',
+                letterSpacing: '-5px',
                 textTransform: 'lowercase',   
             }}
             > <em
             style={{
                 
-                backgroundSize: '0var(20%),100% var(20%)'
+                backgroundSize: '0var(20%),100% var(20%)',
+                letterSpacing: '-10px'
             }}>Fun Fact: </em>My favorite language is React.</p>
 
            

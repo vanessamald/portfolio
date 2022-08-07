@@ -39,11 +39,11 @@ function Header() {
             left: "0",
             paddingBottom: "100px",
             paddingTop: "0px",
-
+            borderBottom: "1px solid #272727"
             
             }}
         > 
-                   <Nav></Nav>
+            <Nav></Nav>     
            
             <h1 className="" 
             style={{

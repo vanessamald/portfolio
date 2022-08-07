@@ -18,6 +18,7 @@ function Nav(props)  {
     )
 }
 
+
 function Home () { 
 const scrollToRef = useRef();
   
@@ -34,7 +35,7 @@ const scrollToRef = useRef();
           style= {{
             
             marginTop: '10px',
-           
+            
             
           }}
           >
@@ -43,9 +44,10 @@ const scrollToRef = useRef();
           width: "50px",
           height: "1.5px",
           backgroundColor: "#15242e",
-          marginTop: '30px',
-          marginLeft: "80vw",
+          
+          marginLeft: "90vw",
           position: "absolute",
+          marginBottom: "5px",
           
          }}
          >
@@ -55,15 +57,16 @@ const scrollToRef = useRef();
           width: "50px",
           height: "1.5px",
           backgroundColor: "#15242e",
-          marginTop: '30px',
-          marginLeft: "80vw",
-          position: "absolute", 
+          marginTop: '10px',
+          marginLeft: "90vw",
+          position: "absolute",
+          
           
         }}
         >
         </a>
         </div>
-        <Modal className= "nav-menu-modal"
+        <Modal className= "nav-menu-modal" onClick={() => handleClose()}
         style={{
         animationDuration: "3s",
         animationName: "slideFromLeft",
@@ -91,4 +94,4 @@ const scrollToRef = useRef();
     );
   }
 
-export default Nav;
+export default Home;
