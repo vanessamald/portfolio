@@ -128,11 +128,7 @@ function About() {
 
            
             <Resume></Resume>
-            </div> 
-
-            
-           
-            
+            </div>  
         </section>
     )
 }

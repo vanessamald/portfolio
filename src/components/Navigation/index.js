@@ -18,7 +18,6 @@ function Nav(props)  {
     )
 }
 
-
 function Home () { 
 const scrollToRef = useRef();
   
