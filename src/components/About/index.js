@@ -11,6 +11,7 @@ function About() {
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
         return () => window.removeEventListener('scroll', onScroll);
+       
       }, []);
       
     return(
@@ -22,6 +23,11 @@ function About() {
                 }}
             >
             <div 
+            // testing text animation
+            style = {{
+                animation: "text-animation 15s ease-in",
+                animationDelay: "0.2s",
+            }}
             className="about-content">
                 <br/>
                 <br/>   

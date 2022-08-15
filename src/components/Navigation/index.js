@@ -30,41 +30,63 @@ const scrollToRef = useRef();
     return (
       <>
       <div>
-         <div onClick={() => handleShow()} className='menu-button'
+         <div onClick={() => handleShow()} className=''
+         // className= 'menu-button'
           style= {{
             
-            marginTop: '10px',
+            backgroundColor: 'transparent',
+            borderRadius: '100%',
+            cursor: 'pointer',
+            
+            height: '55px',
+            position: 'absolute',
+            right: '10px',
+            top: '50%',
+            
+            transform: 'translateY(-50%)',
+            width: '55px',
             
             
           }}
           >
-         <a className="header-menu" onClick={() => handleShow()} 
+          </div>
+         <a className="" onClick={() => handleShow()} 
+         // className= 'header-menu-top'
          style={{
-          width: "50px",
+          width: "45px",
           height: "1.5px",
-          backgroundColor: "#15242e",
-          
-          marginLeft: "90vw",
+          backgroundColor: "black",
+          //marginLeft: "90vw",
           position: "absolute",
-          marginBottom: "5px",
+          marginTop: '40px',
+          //zIndex: '1',
+          //top: "50%",
+          //transform: 'translateY(-50%)',
+          right: "17px",
           
          }}
          >
         </a> 
-        <a className="header-menu" onClick={() => handleShow()} 
+        <a className="" onClick={() => handleShow()} 
+          //className= 'header-menu'
         style={{
-          width: "50px",
+          width: "45px",
           height: "1.5px",
-          backgroundColor: "#15242e",
-          marginTop: '10px',
-          marginLeft: "90vw",
+          backgroundColor: "black",
+          //marginTop: '10px',
+          //marginLeft: "90vw",
           position: "absolute",
+          //top: '50%',
+          right: '17px',
+          marginTop: '30px',
+          //transform: 'translateY(-50%)',
           
+
           
         }}
         >
         </a>
-        </div>
+        
         <Modal className= "nav-menu-modal" onClick={() => handleClose()}
         style={{
         animationDuration: "3s",

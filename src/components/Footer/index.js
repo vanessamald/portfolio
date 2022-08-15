@@ -18,7 +18,7 @@ function Footer() {
                 paddingTop: '50px',
                 paddingBottom: '100px',
                 backgroundColor: 'rgb(249, 247, 241)',
-                borderTop: '1px solid #272727' 
+                //borderTop: '1px solid #272727' 
             }}
             >
                 <div
@@ -30,14 +30,17 @@ function Footer() {
                 }}>
                     <p
                     style={{
-                        fontStyle: 'italic',
+                        //fontStyle: 'italic',
                         opacity: '0.7',
-                        fontFamily: 'Ogg',
+                        fontFamily: 'MilkyWalky',
+                        //fontFamily: 'Ogg',
                         fontSize: '84px',
-                        letterSpacing: '-10px',
-                        textTransform: 'lowercase'
+                        //letterSpacing: '-10px',
+                        textTransform: 'lowercase',
+                        letterSpacing: 'normal',
+                        
                     }}
-                    >Now . Accepting . Freelance . Work </p> 
+                    >Now... Accepting   Freelance   Work </p> 
                 </div>   
         </div>
     )
