@@ -14,6 +14,10 @@ import weatherMobile from "../../assets/images/weather-mobile.png";
 import weatherMobile2 from "../../assets/images/weather-mobile2.png";
 import friendsDesktop from "../../assets/images/friends-desktop.png";
 import friendsDesktop2 from "../../assets/images/friends-desktop2.png";
+import phone from "../../assets/images/phone.PNG";
+import phone2 from "../../assets/images/phone2.PNG";
+import desktop from "../../assets/images/desktop.PNG";
+import desktop2 from "../../assets/images/desktop2.PNG";
 
 function Gallery (props){
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,6 +55,17 @@ function Gallery (props){
       image2: hodlCrypto,
       image3: hodlDesktop1,
       image4: hodlDesktop2,
+      url: 'https://drkevinfriday.github.io/Hold-On-for-Dear-Life-Ape/'
+    },
+    {
+      name: 'Anti-Ism App',
+      id: 4,
+      category: 'anti-ism',
+      description: 'A social media app that allows users to post stories and images that are related to the anti-ism movement',
+      image: phone,
+      image2: phone2,
+      image3: desktop,
+      image4: desktop2,
       url: 'https://drkevinfriday.github.io/Hold-On-for-Dear-Life-Ape/'
     }
   ]);
