@@ -1,29 +1,33 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.241822e0.css",
-    "main.js": "/portfolio/static/js/main.9bec27f6.js",
+    "main.js": "/portfolio/static/js/main.038761b5.js",
     "static/js/787.a2cb61a6.chunk.js": "/portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/friends-desktop.png": "/portfolio/static/media/friends-desktop.e7ef02e362911d7106e4.png",
     "static/media/friends-desktop2.png": "/portfolio/static/media/friends-desktop2.9032d75ab53897476635.png",
+    "static/media/desktop.PNG": "/portfolio/static/media/desktop.41c91866d8e46477cb42.PNG",
     "static/media/friends-cover.png": "/portfolio/static/media/friends-cover.80b4653d554699f51d16.png",
+    "static/media/desktop2.PNG": "/portfolio/static/media/desktop2.e2b2bdea62403585ecf6.PNG",
     "static/media/hodl-desktop.png": "/portfolio/static/media/hodl-desktop.3a7e5844aaad80a17e71.png",
     "static/media/friends-choices.png": "/portfolio/static/media/friends-choices.815ee5858ea72fad7298.png",
     "static/media/weather-desktop.png": "/portfolio/static/media/weather-desktop.773b4cbdcb12a0688820.png",
+    "static/media/phone2.PNG": "/portfolio/static/media/phone2.609397a68eaf295f27d8.PNG",
     "static/media/weather-desktop2.png": "/portfolio/static/media/weather-desktop2.eb94fea34453e27856ee.png",
     "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.f89c27291140d271efe8.jpg",
     "static/media/hodl-desktop2.png": "/portfolio/static/media/hodl-desktop2.8900b40d3864f4ed29ba.png",
     "static/media/hodl-cover.png": "/portfolio/static/media/hodl-cover.571b9b519863c789fa1d.png",
+    "static/media/phone.PNG": "/portfolio/static/media/phone.f2a1e6215eea383ff8b5.PNG",
     "static/media/weather-mobile2.png": "/portfolio/static/media/weather-mobile2.9aabc674cf3c4ffe5b74.png",
     "static/media/hodl-crypto.png": "/portfolio/static/media/hodl-crypto.3b8e609811113b6781e9.png",
     "static/media/weather-mobile.png": "/portfolio/static/media/weather-mobile.7cbffd9cb7f108cb8313.png",
     "static/media/Vanessa_Resume_Preview.jpg": "/portfolio/static/media/Vanessa_Resume_Preview.94a8ff54d817008e5e82.jpg",
     "index.html": "/portfolio/index.html",
     "main.241822e0.css.map": "/portfolio/static/css/main.241822e0.css.map",
-    "main.9bec27f6.js.map": "/portfolio/static/js/main.9bec27f6.js.map",
+    "main.038761b5.js.map": "/portfolio/static/js/main.038761b5.js.map",
     "787.a2cb61a6.chunk.js.map": "/portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.241822e0.css",
-    "static/js/main.9bec27f6.js"
+    "static/js/main.038761b5.js"
   ]
 }
