@@ -52,7 +52,7 @@ function About() {
                 
                 }} 
             >
-            I am currently attending the University of Texas Full Stack Coding Bootcamp. 
+            I just graduated from the University of Texas Full Stack Coding Bootcamp. 
             </em>
             <p className="about-text">
             My friends and colleages would describe me as empathetic, passionate, and creative. 

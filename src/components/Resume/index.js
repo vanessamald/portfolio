@@ -28,7 +28,7 @@ function Resume () {
 
                         }} 
                         target="_blank" 
-                        href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:4b6af2cc-b459-3e23-bef6-cad7f0f7a782"
+                        href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:0e7c72ff-fb23-3e4f-aa1b-01f9a69a284b"
                         >
                         Link to Resume
                         </a>
