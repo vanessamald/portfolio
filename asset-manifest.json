@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.241822e0.css",
-    "main.js": "/portfolio/static/js/main.8c5eb0ea.js",
+    "main.css": "/portfolio/static/css/main.b9a843db.css",
+    "main.js": "/portfolio/static/js/main.b903b2d4.js",
     "static/js/787.a2cb61a6.chunk.js": "/portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/friends-desktop.png": "/portfolio/static/media/friends-desktop.e7ef02e362911d7106e4.png",
     "static/media/friends-desktop2.png": "/portfolio/static/media/friends-desktop2.9032d75ab53897476635.png",
@@ -21,13 +21,17 @@
     "static/media/hodl-crypto.png": "/portfolio/static/media/hodl-crypto.3b8e609811113b6781e9.png",
     "static/media/weather-mobile.png": "/portfolio/static/media/weather-mobile.7cbffd9cb7f108cb8313.png",
     "static/media/Vanessa_Resume_Preview.jpg": "/portfolio/static/media/Vanessa_Resume_Preview.2e62cc5ffd6d5063990a.jpg",
+    "static/media/evoke-desktop2.png": "/portfolio/static/media/evoke-desktop2.cb54c27b4f7b9faaf0f6.png",
+    "static/media/evoke-desktop1.png": "/portfolio/static/media/evoke-desktop1.57e46c7b80a0c026d030.png",
+    "static/media/evoke-phone1.png": "/portfolio/static/media/evoke-phone1.21015f3e2125ecb28947.png",
+    "static/media/evoke-phone2.png": "/portfolio/static/media/evoke-phone2.bef395b88f820a1fbe36.png",
     "index.html": "/portfolio/index.html",
-    "main.241822e0.css.map": "/portfolio/static/css/main.241822e0.css.map",
-    "main.8c5eb0ea.js.map": "/portfolio/static/js/main.8c5eb0ea.js.map",
+    "main.b9a843db.css.map": "/portfolio/static/css/main.b9a843db.css.map",
+    "main.b903b2d4.js.map": "/portfolio/static/js/main.b903b2d4.js.map",
     "787.a2cb61a6.chunk.js.map": "/portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.241822e0.css",
-    "static/js/main.8c5eb0ea.js"
+    "static/css/main.b9a843db.css",
+    "static/js/main.b903b2d4.js"
   ]
 }
