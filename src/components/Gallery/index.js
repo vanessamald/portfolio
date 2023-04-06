@@ -18,6 +18,10 @@ import phone from "../../assets/images/phone.PNG";
 import phone2 from "../../assets/images/phone2.PNG";
 import desktop from "../../assets/images/desktop.PNG";
 import desktop2 from "../../assets/images/desktop2.PNG";
+import evokePhone1 from '../../assets/images/evoke-phone1.png';
+import evokePhone2 from '../../assets/images/evoke-phone2.png';
+import evokeDesk1 from '../../assets/images/evoke-desktop1.png';
+import evokeDesk2 from '../../assets/images/evoke-desktop2.png';
 
 function Gallery (props){
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,9 +29,20 @@ function Gallery (props){
 
   const [photos] = useState ([
     {
-      name: 'Friends Timed Quiz',
+      name: 'Evoke Neurodiagnostics',
       category: 'friends',
       id: 1,
+      description: 'A website for a client that offers cognitive impairment testing services.',
+      image: evokePhone1,
+      image2: evokePhone2,
+      image3: evokeDesk1,
+      image4: evokeDesk2,
+      url: 'https://quiet-cliffs-52016.herokuapp.com'
+    },
+    {
+      name: 'Friends Timed Quiz',
+      category: 'friends',
+      id: 2,
       description: 'A timed Friends trivia quiz game that lets the user save their high scores and see the top scores.',
       image: friendsQuiz,
       image2: friendsChoice,
@@ -37,7 +52,7 @@ function Gallery (props){
     },
     {
       name: 'Weather Dashboard',
-      id: 2,
+      id: 3,
       category: 'weather-dashboard',
       description: 'A weather dashboard application that allows users to search for weather conditions by city name',
       image: weatherMobile,
@@ -48,7 +63,7 @@ function Gallery (props){
     },
     {
       name: 'Hold on for Dear Life Ape',
-      id: 3,
+      id: 4,
       category: 'hodl-app',
       description: 'A crypto currency app that lets users compare the value of crypto to the value of popular stocks',
       image: hodl,
@@ -59,7 +74,7 @@ function Gallery (props){
     },
     {
       name: 'Anti-Ism App',
-      id: 4,
+      id: 5,
       category: 'anti-ism',
       description: 'A social media app that allows users to post stories and images that are related to the anti-ism movement',
       image: phone,

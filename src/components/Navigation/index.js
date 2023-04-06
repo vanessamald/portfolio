@@ -30,41 +30,44 @@ const scrollToRef = useRef();
     return (
       <>
       <div>
-         <div onClick={() => handleShow()} className='menu-button'
+         <button onClick={() => handleShow()} className='menu-button'
           style= {{
-            
-            marginTop: '10px',
-            
-            
+            position: 'relative',
+            width: '50px',
+            height: '50px',
+            left: '90%',
+            top: '10%',
+            border: 'none',
+            backgroundColor: 'transparent'
           }}
           >
-         <a className="header-menu" onClick={() => handleShow()} 
+         <div className="header-menu" 
          style={{
           width: "50px",
           height: "1.5px",
           backgroundColor: "#15242e",
           
-          marginLeft: "90vw",
+          
           position: "absolute",
           marginBottom: "5px",
           
          }}
          >
-        </a> 
-        <a className="header-menu" onClick={() => handleShow()} 
+        </div> 
+        <div className="header-menu" 
         style={{
           width: "50px",
           height: "1.5px",
           backgroundColor: "#15242e",
           marginTop: '10px',
-          marginLeft: "90vw",
+          
           position: "absolute",
           
           
         }}
         >
-        </a>
         </div>
+        </button>
         <Modal className= "nav-menu-modal" onClick={() => handleClose()}
         style={{
         animationDuration: "3s",

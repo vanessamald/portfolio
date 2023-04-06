@@ -36,8 +36,7 @@ function About() {
             </p>
             <p className="about-text"
             >
-            My name is Vanessa, a Mexican-American Front End Web Developer in training.
-            I graduated with a Public Health degree in May 2020 and am currently in the process of a career change.
+            My name is Vanessa, a Mexican-American Freelance Front End Web Developer with a background in Public Health & over 10 years of Healthcare experience. 
             </p> 
             <em
              style = {{
@@ -52,7 +51,7 @@ function About() {
                 
                 }} 
             >
-            I just graduated from the University of Texas Full Stack Coding Bootcamp. 
+            <a> </a>
             </em>
             <p className="about-text">
             My friends and colleages would describe me as empathetic, passionate, and creative. 
@@ -64,35 +63,43 @@ function About() {
                 }} 
             >
                 Skills</h2>
+                <h3>Web Design & Development</h3>
             <p className="about-text"
             style = {{
                 
                 }} 
                 >
-                HTML / CSS / JAVASCRIPT / REACT / BOOTSTRAP / MERN / INQUIRER / SQL </p>
+                HTML / CSS / JAVASCRIPT / NODE / EXPRESS / REACT / BOOTSTRAP / FRAMER MOTION / MONGODB / INQUIRER / SQL / MYSQL / JQUERY / PWA / GIT / HEROKU / GODADDY  </p>
+     
+                <h3>Social Media & Marketing</h3>
                 <p className="about-text"
                 style = {{
                 
                 }} 
                 >
-                MYSQL / JQUERY / PWA / GIT 
+                SEO / SOCIAL MEDIA MANAGEMENT AND STRATEGY DEVELOPMENT / CONTENT CREATION / COPYWRITING / BRANDING / INFOGRAPHICS 
                 </p>
             <h2 className="about-subtitle"
             style = {{
                 
                 }} 
             >
-                Experience</h2>
+                Education</h2>
             <p className="about-text"
             style = {{
                 
                 }} 
-            > Degree in Public Health</p>
+            > Hubspot Academy's Social Media Strategy Certificate (2023)</p>
+              <p className="about-text"
+            style = {{
+                
+                }} 
+            > University of Texas Full Stack Web Developer Certificate (2022)</p>
             <p className="about-text"
               style = {{
 
                 }} 
-            > 14 years customer service experience relating to healthcare </p>
+            > University of Texas Bachelor's Degree in Public Health (2020) </p>
             <p className="about-text"
              style = {{
                 transform: `translate3d(${offset/1000}vw, 0px, 0px)`,
@@ -105,7 +112,7 @@ function About() {
                 letterSpacing: '-5px',
                 textTransform: 'lowercase',
                 }} 
-            > 6 months of web developer experience</p>
+            > 1 year of web developer experience</p>
             <p className="about-text"
             style={{
                 transform: `translate3d(-${offset/1000}vw, 0px, 0px)`,
@@ -124,10 +131,10 @@ function About() {
                 
                 backgroundSize: '0var(20%),100% var(20%)',
                 letterSpacing: '-10px'
-            }}>Fun Fact: </em>My favorite language is React.</p>
+            }}></em></p>
 
            
-            <Resume></Resume>
+            
             </div>  
         </section>
     )
