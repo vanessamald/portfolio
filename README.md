@@ -10,6 +10,7 @@ Welcome to my first website portfolio! This is the first version of my portfolio
 - [Deployment](#deployment)
 
 ## Deployment
+https://vanessamald.github.io/portfolio/
 
 ## Technologies
 ![HTML Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white "")
